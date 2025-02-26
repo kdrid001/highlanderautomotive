@@ -1,0 +1,16 @@
+# Node.js dependencies
+Node_modules/
+.env
+package-lock.json
+
+# Database files
+database/*.sql
+database/dumps/
+
+# Logs & Debugging
+logs/
+*.log
+
+# Mac & Windows System Files
+.DS_Store
+Thumbs.db 
