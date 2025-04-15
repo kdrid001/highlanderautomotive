@@ -11,9 +11,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <header>
-        <h1>Highlander Automotive</h1>
-        <p>Reliable Auto Repair & Maintenance Subscription Plans</p>
+    <header class="landing-header">
+        <div class="branding">
+            <img src="high_lockup_color.svg" alt="Highlander Automotive Logo" class="logo">
+            <div class="headline">
+                <h1>Highlander Automotive</h1>
+                <p class="tagline">Reliable Auto Repair & Maintenance Subscription Plans</p>
+            </div>
+        </div>
     </header>
     
     <section class="email-signup">
@@ -31,25 +36,78 @@
             <div class="icon">
                 <i class="fa-solid fa-3x fa-fire-flame-curved"></i>
             </div>
-            <h2>Premium Parts</h2>
-            <p>Our technicians use the highest quality parts which is sourced locally. This will increase longivity of your vehicle</p>
+            <div class="desc">
+                <h2>Premium Parts</h2>
+                <p>Our technicians use the highest quality parts which is sourced locally. This will increase longivity of your vehicle</p>
+            </div>
         </div>
-        <div>
-            <h2>Fast Service</h2>
-            <p>We make sure you recieve your service as soon as we can. We also provide 1year/12k miles waranty on all of our services inlcluding parts and labor</p>
+        <div class="grid">
+            <div class="icon">
+                <i class="fa-solid fa-3x fa-truck-fast"></i>
+            </div>
+            <div class="desc">
+                <h2>Fast Service</h2>
+                <p>We make sure you recieve your service as soon as we can. We also provide 1year/12k miles waranty on all of our services inlcluding parts and labor</p>
+            </div>
         </div>
-        <div>
-            <h2>quality Assurance</h2>
-            For every service you make, we will ensure there are faults and we will check and retest every repair made before returning your vehicle. 
+        <div class="grid">
+            <div class="icon">
+                <i class="fa-solid fa-3x fa-check-double"></i>
+            </div>
+            <div class="desc">
+                <h2>Quality Assurance</h2>
+                <p>For every service you make, we will ensure there are faults and we will check and retest every repair made before returning your vehicle.</p>
+            </div> 
         </div>
     </section>
 
     <section id="pricing">
-        <div></div>
-        <div></div>
-        <div></div>
+        <div class="product" id="basic">
+            <div class="level">
+                <h3>Basic</h3>
+            </div>
+            <h2>$39.99/Mo</h2>
+            <ol>
+                <li>bla bal bla</li>
+                <li>bla bal bla</li>
+                <li>bla bal bla</li>
+                <li>bls bal bla</li>
+            </ol>
+            <button class="btn">Select</button>
+        </div>
+        <div class="product standard">
+            <div class="badge">Best Value</div>
+            <div class="level">
+                <h3>Standard</h3>
+            </div>
+            <h2>$59.99/Mo</h2>
+            <ol>
+                <li>bla bal bla</li>
+                <li>bla bal bla</li>
+                <li>bla bal bla</li>
+                <li>bls bal bla</li>
+            </ol>
+            <button class="btn">Select</button>
+        </div>
+        <div class="product" id="Premium">
+            <div class="level">
+                <h3>Premium</h3>
+            </div>
+            <h2>$79.99/Mo</h2>
+            <ol>
+                <li>bla bal bla</li>
+                <li>bla bal bla</li>
+                <li>bla bal bla</li>
+                <li>bls bal bla</li>
+            </ol>
+            <button class="btn">Select</button>
+        </div>
     </section>
 
     <script src="script.js"></script>
 </body>
+
+<footer>
+    highlander Automotive all rights reserved
+</footer>
 </html>
