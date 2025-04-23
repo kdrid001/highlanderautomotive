@@ -1,0 +1,95 @@
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+
+  /* Hero Section */
+
+  .hero-header {
+    text-align: center;
+    padding: 2.5rem 1rem;
+  }
+
+  .hero-logo {
+    max-width: 300px;
+    margin-bottom: 0.5rem;
+  }
+
+  /* Features Section */
+
+  #features {
+    margin-top: 3rem;
+    padding: 3rem 1rem;
+  }
+  
+  .thumbnail-img {
+      display: flex;
+      justify-content: center;
+  }
+  
+  .grid {
+    display: flex;
+    align-items: center;
+    margin: 1.5rem auto;
+    max-width: 800px;
+  }
+  
+  .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20vw;
+    color: #ffb81c;
+  }
+  
+  .desc {
+    width: 80vw;
+    text-align: left;
+  }
+
+  @media (max-width: 550px) {
+    .icon {
+      display: none;
+    }
+    .desc {
+      width: 100%;
+      text-align: center;
+      height: auto;
+      padding: 0;
+    }
+  }
+
+  /* Pricing Section */
+
+  .pricing-wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 0 1rem;
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  max-width: 1400px;
+  margin: 4rem auto;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+#pricing {
+    background-color: #f4f4f4;
+    padding: 4rem 1rem;
+  }
+
+/* Footer Section */
+
+footer ul {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0;
+    list-style: none;
+    margin-bottom: 0.5rem;
+    
+  }

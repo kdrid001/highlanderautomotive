@@ -1,0 +1,137 @@
+/* Hero Section */
+
+.hero-header h1 {
+    font-size: 2.5rem;
+    color: #003da5;
+    margin-top: 0;
+  }
+
+  .hero-tagline {
+    font-size: 1rem;
+    color: #444;
+    font-style: italic;
+  }
+
+  .hero-divider {
+    width: 100%;
+    max-width: 700px;
+    margin: 40px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+
+  /* Email Sign-up Section */
+
+  .email-signup {
+    margin: 50px auto;
+    padding: 20px;
+    width: 90%;
+    max-width: 650px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+
+  input[type="email"] {
+    padding: 10px;
+    width: 80%;
+    margin: 10px 0;
+  }
+
+  button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+
+  /* Product Section */
+  
+.product {
+    display: block; /* ← Remove or override "flex" */
+    min-width: 0; /* Prevents overflow */
+    width: 100%;
+    max-width: 330px;
+    padding: 1.5rem;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+  }
+
+  .product:hover {
+    transform: translateY(-6px);
+  }
+
+  .product h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    color: #003da5;
+  }
+  
+  .product h2 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+  }
+  
+  .product ul {
+    padding-left: 1.25rem;
+    margin-bottom: 1rem;
+  }
+  
+  .product li {
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+  }
+
+  .product .btn {
+    align-self: flex-start;
+    padding: 0.75rem 1.5rem;
+    background-color: #ffb81c;
+    color: #000;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+  }
+
+  .product.standard {
+    border: 2px solid #003da5;
+  }
+
+  .badge {
+    position: absolute;
+    top: -12px;
+    right: 10px;
+    background-color: #ffb81c;
+    color: #000;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    z-index: 2;
+  }
+
+  /* Footer Section */
+
+  footer {
+    margin-top: 30px;
+    background-color: #ddd;
+    padding: 20px;
+    text-align: right;
+  }
+
+  footer ul li {
+    margin-left: 1rem;
+    color: #000;
+    text-decoration: none;
+  }
+
+  footer span {
+    font-size: 0.9em;
+    color: #444;
+  }
+  
+  
