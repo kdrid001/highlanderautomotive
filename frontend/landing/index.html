@@ -9,105 +9,147 @@
 
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@1.*/css/pico.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+
+
 </head>
 <body>
-    <header class="landing-header">
-        <div class="branding">
-            <img src="high_lockup_color.svg" alt="Highlander Automotive Logo" class="logo">
-            <div class="headline">
-                <h1>Highlander Automotive</h1>
-                <p class="tagline">Reliable Auto Repair & Maintenance Subscription Plans</p>
-            </div>
-        </div>
+    <header class="hero-header">
+        <img src="high_mark_color.svg" alt="Highlander Automotive Logo" class="hero-logo">
+        <h1>Highlander Automotive</h1>
+        <p class="hero-tagline">Reliable Auto Repair & Maintenance Subscription Plans</p>
     </header>
-    
-    <section class="email-signup">
-        <h2>Join Our Highlander Care List</h2>
-        <p>Get exclusive discounts & updates on maintenance & repairs!</p>
-        <form id="email-form">
-            <input type="email" id="email" placeholder="Enter your email" required>
-            <button type="submit">Sign Up</button>
-        </form>
-        <p id="confirmation" style="display:none;">Thank you for signing up!</p>
-    </section>
+    <main class="container">
+        <section class="email-signup">
+            <h2>Join Our Highlander Care List</h2>
+            <p>Get exclusive discounts & updates on maintenance & repairs!</p>
+                
+            <iframe
+                src="https://embeds.beehiiv.com/fb9abfe8-4666-4a12-9e51-e69e59a4fd61?slim=true" data-test-id="beehiiv-embed" 
+                height="52" 
+                frameborder="0" 
+                scrolling="no" 
+                style="width: 100%; margin: 10px 0; border-radius: 0px !important; background-color: transparent;">
+            </iframe>
+            
+            <p id="confirmation" style="display:none;">Thank you for signing up!</p>
+        </section>
 
-    <section id="features">
-        <div class="grid">
-            <div class="icon">
-                <i class="fa-solid fa-3x fa-fire-flame-curved"></i>
+        <section id="features">
+            <div class="grid">
+                <div class="icon">
+                    <i class="fa-solid fa-3x fa-fire-flame-curved"></i>
+                </div>
+                <div class="desc">
+                    <h2>Premium Parts</h2>
+                    <p>Our technicians use the highest quality parts which is sourced locally. This will increase longivity of your vehicle</p>
+                </div>
             </div>
-            <div class="desc">
-                <h2>Premium Parts</h2>
-                <p>Our technicians use the highest quality parts which is sourced locally. This will increase longivity of your vehicle</p>
+            <div class="grid">
+                <div class="icon">
+                    <i class="fa-solid fa-3x fa-truck-fast"></i>
+                </div>
+                <div class="desc">
+                    <h2>Fast Service</h2>
+                    <p>We make sure you recieve your service as soon as we can. We also provide 1year/12k miles waranty on all of our services inlcluding parts and labor</p>
+                </div>
             </div>
-        </div>
-        <div class="grid">
-            <div class="icon">
-                <i class="fa-solid fa-3x fa-truck-fast"></i>
+            <div class="grid">
+                <div class="icon">
+                    <i class="fa-solid fa-3x fa-check-double"></i>
+                </div>
+                <div class="desc">
+                    <h2>Quality Assurance</h2>
+                    <p>For every service you make, we will ensure there are faults and we will check and retest every repair made before returning your vehicle.</p>
+                </div> 
             </div>
-            <div class="desc">
-                <h2>Fast Service</h2>
-                <p>We make sure you recieve your service as soon as we can. We also provide 1year/12k miles waranty on all of our services inlcluding parts and labor</p>
+        </section>
+            <div class="thumbnail-img">
+                <img src="assets/gauge_cluster.JPEG" alt="instrument gauges with all lights on" class="hero-divider" width="600px" height="400px">
             </div>
-        </div>
-        <div class="grid">
-            <div class="icon">
-                <i class="fa-solid fa-3x fa-check-double"></i>
-            </div>
-            <div class="desc">
-                <h2>Quality Assurance</h2>
-                <p>For every service you make, we will ensure there are faults and we will check and retest every repair made before returning your vehicle.</p>
-            </div> 
-        </div>
-    </section>
+        <section>
 
-    <section id="pricing">
-        <div class="product" id="basic">
-            <div class="level">
-                <h3>Basic</h3>
+        </section>
+
+        <section id="pricing">
+            <div class="pricing-wrapper">
+                <div class="pricing-grid">
+                <div class="product">
+                    <h3>Basic</h3>
+                    <h2>$39.99/Mo</h2>
+                    <ul>
+                    <li>Up to 2 oil changes/year (8 quarts max)</li>
+                    <li>Unlimited tire rotations</li>
+                    <li>Multipoint inspections</li>
+                    <li>Service reminders & scheduling</li>
+                    <li><strong>Save $80/year (2 months free)</strong></li>
+                    </ul>
+                    <a href="https://buy.stripe.com/test_3cs5kPde57CX4aA7ss" target="_blank" rel="noopener no-referrer">
+                        <button class="btn">Select</button>
+                    </a> 
+                </div>
+            
+                <div class="product highlighted">
+                    <div class="badge">Most Popular</div>
+                    <h3>Standard</h3>
+                    <h2>$69.99/Mo</h2>
+                    <ul>
+                    <li>Everything in Basic</li>
+                    <li>Brake inspection & adjustment</li>
+                    <li>Fluid top-off + battery check</li>
+                    <li>1 set of brake pads/year</li>
+                    <li><strong>Save $140/year (2 months free)</strong></li>
+                    </ul>
+                    <a href="https://buy.stripe.com/test_cN23cHa1Tg9t8qQcMN" target="_blank" rel="noopener no-referrer">
+                        <button class="btn">Select</button>
+                    </a>
+                </div>
+            
+                <div class="product">
+                    <h3>Premium</h3>
+                    <h2>$99.99/Mo</h2>
+                    <ul>
+                    <li>Everything in Standard</li>
+                    <li>Key fob programming</li>
+                    <li>TPMS resets</li>
+                    <li>Module calibration & reflashes</li>
+                    <li>$199 diagnostic waived</li>
+                    <li><strong>Save $200/year (2 months free)</strong></li>
+                    </ul>
+                    <a href="https://buy.stripe.com/test_cN23cHa1Tg9t8qQcMN" target="_blank" rel="noopener no-referrer">
+                        <button class="btn">Select</button>
+                    </a>
+                </div>
+            
+                <div class="product">
+                    <h3>Enterprise</h3>
+                    <h2>Custom Pricing</h2>
+                    <ul>
+                    <li>Fleet service management</li>
+                    <li>Volume discounts</li>
+                    <li>Dedicated support</li>
+                    <li>Tailored maintenance</li>
+                    <li><strong>Request your quote today</strong></li>
+                    </ul>
+                    <button class="btn">Request Quote</button>
+                </div>
+                </div>
             </div>
-            <h2>$39.99/Mo</h2>
-            <ol>
-                <li>bla bal bla</li>
-                <li>bla bal bla</li>
-                <li>bla bal bla</li>
-                <li>bls bal bla</li>
-            </ol>
-            <button class="btn">Select</button>
-        </div>
-        <div class="product standard">
-            <div class="badge">Best Value</div>
-            <div class="level">
-                <h3>Standard</h3>
-            </div>
-            <h2>$59.99/Mo</h2>
-            <ol>
-                <li>bla bal bla</li>
-                <li>bla bal bla</li>
-                <li>bla bal bla</li>
-                <li>bls bal bla</li>
-            </ol>
-            <button class="btn">Select</button>
-        </div>
-        <div class="product" id="Premium">
-            <div class="level">
-                <h3>Premium</h3>
-            </div>
-            <h2>$79.99/Mo</h2>
-            <ol>
-                <li>bla bal bla</li>
-                <li>bla bal bla</li>
-                <li>bla bal bla</li>
-                <li>bls bal bla</li>
-            </ol>
-            <button class="btn">Select</button>
-        </div>
-    </section>
+          </section>
+          
+    </main>
 
     <script src="script.js"></script>
 </body>
 
 <footer>
-    highlander Automotive all rights reserved
+    <ul>
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Terms</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+    <span>Copyright 2025, Highlander Automotive INC.</span>
 </footer>
 </html>
