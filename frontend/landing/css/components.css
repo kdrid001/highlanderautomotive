@@ -101,6 +101,10 @@
     border: 2px solid #003da5;
   }
 
+  .product.highlighted {
+    position: relative;
+  }
+
   .badge {
     position: absolute;
     top: -12px;
